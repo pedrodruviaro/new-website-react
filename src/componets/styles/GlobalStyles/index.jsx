@@ -7,7 +7,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: ${props => props.fontPrimary};
 }
 
 html {
@@ -24,7 +24,7 @@ body {
 }
 
 section {
-    padding: 5em 2em;
+    padding: 4em 2em;
 }
 
 img {
@@ -36,68 +36,6 @@ img {
     outline: 3px solid  ${props => props.theme.clrAccent};
     outline-offset: 3px;
 }
-
-.btn {
-    display: inline-block;
-    background-color: ${props => props.theme.clrAccent};
-    color:  ${props => props.theme.clrLight};
-    border: none;
-    border-radius: 5px;
-    padding: 1em 2.5em;
-    font-size: .8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight:  ${props => props.theme.weigthBold};
-    cursor: pointer;
-    position: relative;
-    transition: transform 300ms ease-in-out,
-                box-shadow 300ms ease-in;
-    
-    box-shadow: rgba(241, 241, 241, 0.2) 0px 7px 29px 0px;
-}
-
-button:hover,
-button:focus {
-    transform: scale(1.1);
-    box-shadow: none;
-    opacity: .9;
-}
-
-
-/* typography */
-h1,
-h2,
-h3 {
-    line-height: 1.1;
-    margin: 0;
-}
-
-h1 {
-    font-size: ${props => props.theme.fsh1};
-}
-
-h2 {
-    font-size:  ${props => props.theme.fsh2};
-}
-
-h3 {
-    font-size:  ${props => props.theme.fsh3};
-}
-
-p {
-    line-height: 1.5;
-}
-
-.section__title {
-    margin-bottom: .25em;
-}
-
-.section__subtitle {
-    margin: 0;
-    font-size:  ${props => props.theme.fsh3};
-}
-
-
 `;
 
 
