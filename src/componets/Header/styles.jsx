@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
-    background-color: ${props => props.theme.clrDark};
+    /* background-color: ${props => props.theme.clrDark};
     color: ${props => props.theme.clrLight};
     padding: 1rem 1.5rem;
     height: 8vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
 
     img {
         width: 120px;
