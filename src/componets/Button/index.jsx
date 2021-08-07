@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
+export const Button = styled.a`
   display: inline-block;
   background-color: ${(props) => props.theme.clrAccent};
   color: ${(props) => props.theme.clrLight};
   border: none;
   border-radius: 5px;
-  padding: 1em 2.5em;
-  font-size: 0.8rem;
+  padding: 1em 2em;
+  font-size: .9rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: ${(props) => props.theme.weigthBold};

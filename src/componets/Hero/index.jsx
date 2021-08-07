@@ -5,7 +5,7 @@ import { HeroStyled, HeroSubtitle, HeroTitle } from "./styles";
 export default function index() {
   return (
     <HeroStyled>
-      <HeroTitle>welcome</HeroTitle>
+      <HeroTitle>welcome.</HeroTitle>
       <HeroSubtitle>know more about me</HeroSubtitle>
       <Button>Start the tour</Button>
     </HeroStyled>

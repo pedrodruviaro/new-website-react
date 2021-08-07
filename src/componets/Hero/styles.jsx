@@ -12,7 +12,7 @@ export const HeroStyled = styled.section`
 
 
     height: calc(100vh - 8vh);
-    background-image: url(${bannerSM}), radial-gradient(rgb(73, 73, 73), rgb(255, 255, 255));
+    background-image: url(${bannerSM}), radial-gradient(#563986a0, #5e317099);
     background-attachment: fixed;
     background-blend-mode: multiply;
     background-position: center;
@@ -27,11 +27,11 @@ export const HeroStyled = styled.section`
 	gap: 1.5rem;
 
     @media (min-width: 1200px) {
-        background-image: url(${bannerMD}), radial-gradient(rgb(73, 73, 73), rgb(255, 255, 255));
+        background-image: url(${bannerMD}), radial-gradient(#563986a0, #5e317099);
     }
 
     @media (min-width: 2000px) {
-        background-image: url(${bannerXL}), radial-gradient(rgb(73, 73, 73), rgb(255, 255, 255));
+        background-image: url(${bannerXL}), radial-gradient(#563986a0, #5e317099);
     }
 `;
 
@@ -45,7 +45,7 @@ export const HeroTitle = styled.h1`
 `;
 
 export const HeroSubtitle = styled.h2`
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 2.5rem;
 
 	@media (min-width: 900px) {

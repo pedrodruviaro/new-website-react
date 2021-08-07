@@ -1,9 +1,14 @@
 import React from 'react'
+import Hero from "../Hero";
+import Profile from '../Profile'
+import MyServices from '../MyServices'
 
-export default function Index(props) {
+export default function Index() {
     return (
         <main>
-            {props.children}
+            <Hero />
+            <Profile />
+            <MyServices />
         </main>
     )
 }

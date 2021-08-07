@@ -1,48 +1,47 @@
 import React, { useState } from "react";
+import { ThemeProvider } from "styled-components";
+import { myTheme } from "./componets/styles/Theme";
 import { GlobalStyles } from "./componets/styles/GlobalStyles";
-import Header from "./componets/Header";
-import Main from "./componets/Main";
-import FormContact from './pages/FormContact'
-import Footer from "./componets/Footer";
-import Hero from "./componets/Hero";
-import Profile from './componets/Profile'
-import {ThemeProvider} from 'styled-components'
-import {myTheme} from './componets/styles/Theme'
-import Sidebar from './componets/Sidebar'
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
+import Header from "./componets/Header";
+import Sidebar from "./componets/Sidebar";
+import Main from "./componets/Main";
+import FormContact from "./pages/FormContact";
+import Footer from "./componets/Footer";
+
+
 function App() {
+    const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  const [sidebarOpen, setSidebarOpen] = useState(false)
+    function handleSidebarOpen() {
+        setSidebarOpen(!sidebarOpen);
+    }
 
-  function handleSidebarOpen(){
-    setSidebarOpen(!sidebarOpen)
-  }
+    return (
+        <ThemeProvider theme={myTheme}>
+            <GlobalStyles />
 
-  return (
-    <ThemeProvider theme={myTheme}>
-      <GlobalStyles />
+            <Header
+                handleSidebarOpen={handleSidebarOpen}
+                sidebarOpen={sidebarOpen}
+            ></Header>
+            <Sidebar open={sidebarOpen} />
 
-      <Header handleSidebarOpen={handleSidebarOpen} sidebarOpen={sidebarOpen}></Header>
-      <Sidebar open={sidebarOpen} />
+            <BrowserRouter>
+                <Switch>
+                    <Route exact path="/">
+                        <Main />
+                    </Route>
+                    <Route path="/contact">
+                        <FormContact />
+                    </Route>
+                </Switch>
+            </BrowserRouter>
 
-    <BrowserRouter>
-    <Switch>
-      <Route exact path="/">
-      <Main>
-        <Hero />
-        <Profile />
-      </Main>
-      </Route>
-      <Route path="/contact">
-        <FormContact />
-      </Route>
-    </Switch>
-    </BrowserRouter>
-
-      <Footer />
-    </ThemeProvider>
-  );
+            <Footer />
+        </ThemeProvider>
+    );
 }
 
 export default App;

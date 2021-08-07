@@ -50,7 +50,7 @@ export const FooterStyled = styled.footer`
     }
 
 
-    @media(min-width: 600px){
+    @media(min-width: 700px){
         ul {
             flex-direction: row;
             justify-content: center;

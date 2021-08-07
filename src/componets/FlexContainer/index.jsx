@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
 export const FlexContainer = styled.footer`
-    background-color: ${props => props.theme.clrDark};
-    color: ${props => props.theme.clrLight};
+    background-color: ${props => props.background ? props.background : props.theme.clrDark};
+    color: ${props => props.color === "dark" ? props.theme.clrDark : props.theme.clrLight};
 
     display: flex;
     align-items: ${props => props.align};
