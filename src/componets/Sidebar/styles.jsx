@@ -39,12 +39,15 @@ export const SidebarStyled = styled.aside`
     }
 `;
 
-export const SidebarLink = styled.a`
-    font-weight: ${props => props.theme.weigthBold};
-    font-size: ${props => props.theme.fsh3};
-    text-decoration: none;
+export const SidebarItem = styled.li`
 
-    &:hover {
-        color: var(--clr-accent);
+    a {
+        font-weight: ${props => props.theme.weigthBold};
+        font-size: ${props => props.theme.fsh3};
+        text-decoration: none;
+    
+        &:hover {
+            color: var(--clr-accent);
+        }
     }
 `;

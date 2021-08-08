@@ -25,6 +25,7 @@ export const HeroStyled = styled.div`
     flex-direction: column;
 	text-align: center;
 	gap: 1.5rem;
+    padding: 1rem;
 
     @media (min-width: 1200px) {
         background-image: url(${bannerMD}), radial-gradient(#563986a0, #5e317099);

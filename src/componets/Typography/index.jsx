@@ -1,5 +1,18 @@
 import styled from "styled-components";
 
+export const PrimaryTitle = styled.h1`
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    font-family: ${(props) => props.fontPrimary};
+    text-align: center;
+    font-weight: 600;
+
+    @media (min-width: 800px) {
+        font-size: 4.25rem;
+    }
+`
+
 export const SecondaryTitle = styled.h2`
     font-size: 3rem;
     line-height: 1.1;

@@ -9,7 +9,11 @@ import Sidebar from "./componets/Sidebar";
 import Main from "./componets/Main";
 import FormContact from "./pages/FormContact";
 import Curriculum from './pages/Curriculum'
+import ConfirmSubmit from './pages/ConfirmSubmit'
+import Page404 from './pages/Page404'
 import Footer from "./componets/Footer";
+
+import ScrollToTop from './componets/ScrollToTop'
 
 function App() {
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -22,11 +26,14 @@ function App() {
         <ThemeProvider theme={myTheme}>
             <GlobalStyles />
             <BrowserRouter>
+
+            {/* scroll to the top of the page on every transition */}
+            <ScrollToTop />
                 <Header
                     handleSidebarOpen={handleSidebarOpen}
                     sidebarOpen={sidebarOpen}
                 ></Header>
-                <Sidebar open={sidebarOpen} />
+                <Sidebar open={sidebarOpen} handleSidebarOpen={handleSidebarOpen} />
 
                 <Switch>
                     <Route exact path="/">
@@ -37,6 +44,14 @@ function App() {
                     </Route>
                     <Route path="/curriculum">
                         <Curriculum />
+                    </Route>
+
+                    <Route path="/confirm-submit">
+                        <ConfirmSubmit />
+                    </Route>
+
+                    <Route path="*">
+                        <Page404 />
                     </Route>
                 </Switch>
 

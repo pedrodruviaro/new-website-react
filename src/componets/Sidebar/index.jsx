@@ -1,5 +1,6 @@
 import React from 'react'
-import { SidebarLink, SidebarStyled } from './styles'
+import { Link } from 'react-router-dom'
+import { SidebarItem, SidebarStyled } from './styles'
 
 export default function Index(props) {
     
@@ -7,18 +8,24 @@ export default function Index(props) {
         <SidebarStyled open={props.open}>
             <nav>
                 <ul>
-                    <li>
-                        <SidebarLink href="">Home</SidebarLink>
-                    </li>
-                    <li>
-                        <SidebarLink href="">My Services</SidebarLink>
-                    </li>
-                    <li>
-                        <SidebarLink href="">Aboute me</SidebarLink>
-                    </li>
-                    <li>
-                        <SidebarLink href="">My Work</SidebarLink>
-                    </li>
+                    <SidebarItem>
+                        <Link to="/" onClick={() => props.handleSidebarOpen()}>Home</Link>
+                    </SidebarItem>
+                    <SidebarItem>
+                        <Link to="/curriculum" onClick={() => props.handleSidebarOpen()}>Curriculum</Link>
+                    </SidebarItem>
+                    <SidebarItem>
+                        <Link to="/contact" onClick={() => props.handleSidebarOpen()}>Contact</Link>
+                    </SidebarItem>
+                    <SidebarItem>
+                        <a href="#services" onClick={() => props.handleSidebarOpen()}>My Services</a>
+                    </SidebarItem>
+                    <SidebarItem>
+                        <a href="#about" onClick={() => props.handleSidebarOpen()}>Aboute me</a>
+                    </SidebarItem>
+                    <SidebarItem>
+                        <a href="#work" onClick={() => props.handleSidebarOpen()}>My Work</a>
+                    </SidebarItem>
                 </ul>
             </nav>
         </SidebarStyled>
