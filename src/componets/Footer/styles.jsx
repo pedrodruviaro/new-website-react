@@ -13,11 +13,11 @@ export const FooterStyled = styled.footer`
     img {
         width: 120px;
     }
-
+    
     ul {
         display: flex;
         flex-direction: column;
-        gap: 1.25rem;
+        gap: 2.5rem;
     }
 
     a {
@@ -25,8 +25,9 @@ export const FooterStyled = styled.footer`
         align-items: center;
         justify-content: center;
         gap: .5rem;
+        font-size: 1.125rem;
         padding: .5rem;
-        transition: transform 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
 
         &:after {
             content: "|";
@@ -38,10 +39,17 @@ export const FooterStyled = styled.footer`
             color: ${props => props.theme.clrAccent};
         }
 
-
-
         &:hover {
             transform: scale(1.1);
+        }
+
+        &:hover svg {
+            color: ${props => props.theme.clrAccent};
+            opacity: .9;
+        }
+
+        svg {
+            transition: all 300ms ease-in-out;
         }
     }
 
@@ -52,11 +60,11 @@ export const FooterStyled = styled.footer`
     }
 
 
-    @media(min-width: 700px){
+    @media(min-width: 400px){
         ul {
             flex-direction: row;
+            flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
         }
     }
 `

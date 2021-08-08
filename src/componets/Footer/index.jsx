@@ -6,6 +6,7 @@ import {
     FaLinkedinIn,
     FaInstagram,
     FaEnvelopeOpenText,
+    FaRegListAlt
 } from "react-icons/fa";
 import { FlexContainer } from "../Containers";
 import { Link } from "react-router-dom";
@@ -38,6 +39,12 @@ export default function index() {
                                 <FaInstagram />
                                 Instagram
                             </a>
+                        </li>
+                        <li>
+                            <Link to="/curriculum">
+                                <FaRegListAlt />
+                                Curriculum
+                            </Link>
                         </li>
                         <li>
                             <Link to="/contact">

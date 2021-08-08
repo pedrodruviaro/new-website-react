@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const Button = styled.a`
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
   background-color: ${(props) => props.theme.clrAccent};
   color: ${(props) => props.theme.clrLight};
   border: none;
@@ -24,3 +26,5 @@ export const Button = styled.a`
     box-shadow: none;
   }
 `;
+
+export const ButtonSubmit = styled(Button).attrs({as: "button"})``

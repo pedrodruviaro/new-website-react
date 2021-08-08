@@ -7,7 +7,7 @@ export default function Index() {
     return (
         <ProfileStyled id="home">
             <SecondaryTitle>Hi, I am <strong>Pedro</strong></SecondaryTitle>
-            <Paragraph>front-end dev</Paragraph>
+            <Paragraph>web developer</Paragraph>
             <img src={profilepicture} alt="Pedro, visto de frente sorrindo." />
         </ProfileStyled>
     )

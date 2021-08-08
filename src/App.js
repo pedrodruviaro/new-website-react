@@ -8,6 +8,7 @@ import Header from "./componets/Header";
 import Sidebar from "./componets/Sidebar";
 import Main from "./componets/Main";
 import FormContact from "./pages/FormContact";
+import Curriculum from './pages/Curriculum'
 import Footer from "./componets/Footer";
 
 function App() {
@@ -33,6 +34,9 @@ function App() {
                     </Route>
                     <Route path="/contact">
                         <FormContact />
+                    </Route>
+                    <Route path="/curriculum">
+                        <Curriculum />
                     </Route>
                 </Switch>
 

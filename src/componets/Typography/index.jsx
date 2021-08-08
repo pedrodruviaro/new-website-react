@@ -43,8 +43,8 @@ export const Paragraph = styled.p`
 export const CustomTitle = styled.p`
      background-color: ${props => props.theme.clrAccent};
      color: ${props => props.theme.clrLight};
-     font-weight: 300;
-     padding: .5rem;
+     font-weight: 500;
+     padding: .75rem;
      width: max-content;
      margin: 0 auto;
 

@@ -26,6 +26,11 @@ export const ProfileStyled = styled.section`
         margin: .5rem auto 0 auto;
         border-radius: 10px;
         box-shadow: ${props => props.theme.bs};
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     strong {
