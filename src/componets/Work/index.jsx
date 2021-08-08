@@ -11,7 +11,7 @@ export default function index() {
             <SecondaryTitle>My work</SecondaryTitle>
             <TertiaryTitle></TertiaryTitle>
 
-            GRIDDDDDDDDDDDDD
+           grid com 6 imagens + link de acesso a pagina de trabalhos
             </Container>
         </WorkStyled>
     )

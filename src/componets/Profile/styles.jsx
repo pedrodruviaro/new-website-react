@@ -4,7 +4,7 @@ export const ProfileStyled = styled.section`
     display: grid;
     position: relative;
     text-align: center;
-    padding: 6rem 0;
+    padding: 8rem 0;
 
     h2 {
         font-weight: 300;
