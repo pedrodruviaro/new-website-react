@@ -7,7 +7,7 @@ export default function index() {
     <HeroStyled>
       <HeroTitle>welcome.</HeroTitle>
       <HeroSubtitle>know more about me</HeroSubtitle>
-      <Button>Start the tour</Button>
+      <Button href="#home">Start the tour</Button>
     </HeroStyled>
   );
 }

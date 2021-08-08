@@ -1,12 +1,12 @@
 import React from "react";
 import { MyServicesStyled } from "./styles";
 import { Paragraph, SecondaryTitle, TertiaryTitle } from "../Typography";
-import { Container, ContainerSplit, FlexContainer } from "../Containers";
+import { Container, ContainerSplit } from "../Containers";
 import { Button } from "../Button";
 
 export default function index(props) {
     return (
-        <MyServicesStyled>
+        <MyServicesStyled id="services">
             <Container>
 
             <SecondaryTitle>What I do</SecondaryTitle>
@@ -43,7 +43,7 @@ export default function index(props) {
                 </div>
             </ContainerSplit>
 
-            <Button>my work</Button>
+            <Button href="#work">my work</Button>
             </Container>
         </MyServicesStyled>
     );

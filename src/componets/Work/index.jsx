@@ -5,7 +5,7 @@ import { Container } from '../Containers'
 
 export default function index() {
     return (
-        <WorkStyled>
+        <WorkStyled id="work">
             <Container>
 
             <SecondaryTitle>My work</SecondaryTitle>

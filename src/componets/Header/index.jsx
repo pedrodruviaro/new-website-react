@@ -2,31 +2,23 @@ import React from "react";
 import { Hamburger, HeaderStyled, MenuNavHeader } from "./styles";
 import logo from "../../assets/imgs/logo.svg";
 import { FlexContainer } from "../Containers";
+import { Link } from "react-router-dom";
 
 export default function Index(props) {
     return (
         <HeaderStyled>
             <FlexContainer align="center" justify="space-between">
-                <a href="">
+                <Link to="/">
                     <img src={logo} alt="" />
-                </a>
+                </Link>
 
                 <MenuNavHeader>
                     <ul>
                         <li>
-                            <a href="#home">Home</a>
+                            <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <a href="">My Services</a>
-                        </li>
-                        <li>
-                            <a href="">Aboute me</a>
-                        </li>
-                        <li>
-                            <a href="">My Work</a>
-                        </li>
-                        <li>
-                            <a href="">Contact</a>
+                            <Link to="/contact">Contact</Link>
                         </li>
                     </ul>
                 </MenuNavHeader>

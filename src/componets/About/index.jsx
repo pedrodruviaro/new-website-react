@@ -5,7 +5,7 @@ import { Container, ContainerSplit } from "../Containers";
 
 export default function index() {
     return (
-        <AboutStyled>
+        <AboutStyled id="about">
             <Container>
                 <SecondaryTitle>Who I am</SecondaryTitle>
                 <CustomTitle>web developer based in Brazil</CustomTitle>

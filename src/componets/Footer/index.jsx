@@ -8,6 +8,7 @@ import {
     FaEnvelopeOpenText,
 } from "react-icons/fa";
 import { FlexContainer } from "../Containers";
+import { Link } from "react-router-dom";
 
 export default function index() {
     return (
@@ -21,28 +22,28 @@ export default function index() {
                 <nav>
                     <ul>
                         <li>
-                            <a href="">
+                            <a rel="noreferrer" href="https://github.com/pedrodruviaro">
                                 <FaGithub />
                                 GitHub
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a rel="noreferrer" href="https://www.linkedin.com/in/pedro-henrique-dalmolin-ruviaro-4b4a00209/">
                                 <FaLinkedinIn />
                                 Linkedin
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a rel="noreferrer" href="https://www.instagram.com/pedrodalmolin/">
                                 <FaInstagram />
                                 Instagram
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <Link to="/contact">
                                 <FaEnvelopeOpenText />
                                 Contact
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>

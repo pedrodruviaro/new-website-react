@@ -10,7 +10,6 @@ import Main from "./componets/Main";
 import FormContact from "./pages/FormContact";
 import Footer from "./componets/Footer";
 
-
 function App() {
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -21,14 +20,13 @@ function App() {
     return (
         <ThemeProvider theme={myTheme}>
             <GlobalStyles />
-
-            <Header
-                handleSidebarOpen={handleSidebarOpen}
-                sidebarOpen={sidebarOpen}
-            ></Header>
-            <Sidebar open={sidebarOpen} />
-
             <BrowserRouter>
+                <Header
+                    handleSidebarOpen={handleSidebarOpen}
+                    sidebarOpen={sidebarOpen}
+                ></Header>
+                <Sidebar open={sidebarOpen} />
+
                 <Switch>
                     <Route exact path="/">
                         <Main />
@@ -37,9 +35,9 @@ function App() {
                         <FormContact />
                     </Route>
                 </Switch>
-            </BrowserRouter>
 
-            <Footer />
+                <Footer />
+            </BrowserRouter>
         </ThemeProvider>
     );
 }
