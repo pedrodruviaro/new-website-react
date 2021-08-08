@@ -1,7 +1,7 @@
 import React from "react";
 import { AboutStyled, Split } from "./styles";
 import { CustomTitle, Paragraph, SecondaryTitle } from "../Typography";
-import { Container, ContainerSplit } from "../Containers";
+import { Container } from "../Containers";
 
 import coder from "../../assets/imgs/il_code.svg";
 import chart from "../../assets/imgs/il_chart.svg";
