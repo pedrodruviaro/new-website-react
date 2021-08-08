@@ -22,19 +22,19 @@ export default function index() {
                 <nav>
                     <ul>
                         <li>
-                            <a rel="noreferrer" href="https://github.com/pedrodruviaro">
+                            <a target="_blank" rel="noreferrer" href="https://github.com/pedrodruviaro">
                                 <FaGithub />
                                 GitHub
                             </a>
                         </li>
                         <li>
-                            <a rel="noreferrer" href="https://www.linkedin.com/in/pedro-henrique-dalmolin-ruviaro-4b4a00209/">
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/pedro-henrique-dalmolin-ruviaro-4b4a00209/">
                                 <FaLinkedinIn />
                                 Linkedin
                             </a>
                         </li>
                         <li>
-                            <a rel="noreferrer" href="https://www.instagram.com/pedrodalmolin/">
+                            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/pedrodalmolin/">
                                 <FaInstagram />
                                 Instagram
                             </a>
