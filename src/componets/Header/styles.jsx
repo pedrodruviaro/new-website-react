@@ -9,6 +9,9 @@ export const HeaderStyled = styled.header`
     align-items: center;
     justify-content: space-between; */
 
+    background-color: ${props => props.theme.clrDark};
+    color: ${props => props.theme.clrLight};
+
     img {
         width: 120px;
     }

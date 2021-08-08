@@ -7,6 +7,8 @@ export const FooterStyled = styled.footer`
     display: flex;
     flex-direction: column;
     text-align: center; */
+    background-color: ${props => props.theme.clrDark};
+    color: ${props => props.theme.clrLight};
 
     img {
         width: 120px;

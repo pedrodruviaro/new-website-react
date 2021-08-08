@@ -7,7 +7,7 @@ import {
     FaInstagram,
     FaEnvelopeOpenText,
 } from "react-icons/fa";
-import { FlexContainer } from "../FlexContainer";
+import { FlexContainer } from "../Containers";
 
 export default function index() {
     return (

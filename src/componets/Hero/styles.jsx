@@ -3,7 +3,7 @@ import bannerSM from "../../assets/imgs/banner_sm.jpg";
 import bannerMD from "../../assets/imgs/banner_md.jpg";
 import bannerXL from "../../assets/imgs/banner__xl.jpg";
 
-export const HeroStyled = styled.section`
+export const HeroStyled = styled.div`
      background: #5e3170;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #573986, #5e3170);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #573986, #5e3170); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */

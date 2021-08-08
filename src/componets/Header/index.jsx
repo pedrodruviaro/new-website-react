@@ -1,7 +1,7 @@
 import React from "react";
 import { Hamburger, HeaderStyled, MenuNavHeader } from "./styles";
 import logo from "../../assets/imgs/logo.svg";
-import { FlexContainer } from "../FlexContainer";
+import { FlexContainer } from "../Containers";
 
 export default function Index(props) {
     return (

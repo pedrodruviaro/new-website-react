@@ -19,12 +19,20 @@ body {
     color:  ${props => props.theme.clrDark};
     margin: 0;
     font-family:  ${props => props.theme.fontPrimary};
-    font-size:  ${props => props.theme.fsbody};
+    font-size:  1rem ;
     line-height: 1;
+
+
 }
 
 section {
-    padding: 4em 2em;
+    /* padding: 4em;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @media (min-width: 800px) {
+        font-size: 1.125rem;
+    } */
 }
 
 img {
@@ -40,9 +48,3 @@ img {
 
 
 
-// @media (min-width: 800px) {
-//         --fs-h1: 4.5rem;
-//         --fs-h2: 3.75rem;
-//         --fs-h3: 1.5rem;
-//         --fs-body: 1.125rem;
-// }

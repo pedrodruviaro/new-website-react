@@ -7,6 +7,7 @@ export const Button = styled.a`
   border: none;
   border-radius: 5px;
   padding: 1em 2em;
+  width: max-content;
   font-size: .9rem;
   text-transform: uppercase;
   letter-spacing: 2px;
