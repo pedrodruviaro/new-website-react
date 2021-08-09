@@ -8,6 +8,7 @@ export const ProfileStyled = styled.section`
 
     h2 {
         font-weight: 300;
+        margin: 0;
     }
 
     p {

@@ -5,6 +5,21 @@ import { FlexContainer } from "../Containers";
 import { Link } from "react-router-dom";
 
 export default function Index(props) {
+    const links = [
+        {
+            label: "Home",
+            path: "/",
+        },
+        {
+            label: "Curriculum",
+            path: "/curriculum",
+        },
+        {
+            label: "Contact",
+            path: "/contact",
+        }
+    ];
+
     return (
         <HeaderStyled>
             <FlexContainer align="center" justify="space-between">
@@ -14,15 +29,11 @@ export default function Index(props) {
 
                 <MenuNavHeader>
                     <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/curriculum">Curriculum</Link>
-                        </li>
-                        <li>
-                            <Link to="/contact">Contact</Link>
-                        </li>
+                        {links.map(link => (
+                            <li key={link.path}>
+                                <Link to={link.path}>{link.label}</Link>
+                            </li>
+                        ))}
                     </ul>
                 </MenuNavHeader>
 

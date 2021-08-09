@@ -28,6 +28,7 @@ export const SecondaryTitle = styled.h2`
 
 export const TertiaryTitle = styled.h3`
     font-size: 1.25rem;
+    text-align: center;
     line-height: 1.1;
     margin-bottom: 1.5rem;
     font-family: ${(props) => props.fontPrimary};

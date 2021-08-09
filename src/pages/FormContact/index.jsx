@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { ContactStyled, FormStyled } from "./styles";
+import { ContactStyled, FormStyled, PendingMessage } from "./styles";
+import {TertiaryTitle} from '../../componets/Typography'
 import { Container } from "../../componets/Containers";
 import { FaPaperPlane } from "react-icons/fa";
-import { ButtonSubmit } from "../../componets/Button";
+    import { ButtonSubmit } from "../../componets/Button";
 import { useHistory } from "react-router-dom";
 import emailjs from 'emailjs-com';
 
@@ -36,6 +37,7 @@ export default function Index() {
     return (
         <ContactStyled>
             <Container>
+                <TertiaryTitle>Contact me!</TertiaryTitle>
                 <FormStyled onSubmit={sendEmail}>
                     <label>
                         Your Name
@@ -67,7 +69,7 @@ export default function Index() {
                         ></textarea>
                     </label>
 
-                    {isPending && <p>Sending...</p>}
+                    {isPending && <PendingMessage>Sending...</PendingMessage>}
 
                     <ButtonSubmit type="submit">
                         Send
