@@ -13,10 +13,11 @@ export default function index(props) {
                     <div>
                         <TertiaryTitle>Web Development</TertiaryTitle>
                         <Paragraph>
-                            Focus on using HTML, CSS and JavaScript for small os
-                            medium projects. I consider CSS a point of some
-                            problems im many project outhere, so i focus a lot
-                            in fixing and studying these problems.
+                            Atualmente trabalhando com React para construir
+                            aplicações web. Paralelamente, já comecei meu
+                            caminho no mundo back-end com o NodeJS para me
+                            integrar ao meu trabalho e construir mais projetos
+                            incríveis.
                         </Paragraph>
                     </div>
 
