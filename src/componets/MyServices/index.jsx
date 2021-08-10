@@ -13,11 +13,10 @@ export default function index(props) {
                     <div>
                         <TertiaryTitle>Web Development</TertiaryTitle>
                         <Paragraph>
-                            Atualmente trabalhando com React para construir
-                            aplicações web. Paralelamente, já comecei meu
-                            caminho no mundo back-end com o NodeJS para me
-                            integrar ao meu trabalho e construir mais projetos
-                            incríveis.
+                            Currently working with React to build web apps and SPA's. At
+                            the same time, I've already started my way in the
+                            back-end world with NodeJS to integrate my work and
+                            build more amazing projects.
                         </Paragraph>
                     </div>
 
