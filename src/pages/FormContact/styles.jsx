@@ -22,6 +22,10 @@ export const FormStyled = styled.form`
         border-radius: 2px;
     }
 
+    textarea {
+        min-height: 150px;
+    }
+
     label {
         width: 100%;
         margin: .75rem 0;

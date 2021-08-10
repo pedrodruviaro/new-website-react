@@ -1,51 +1,59 @@
 import styled from "styled-components";
+// works
 
-export const WorkStyled = styled.section``;
+export const WorkStyled = styled.section`
+color: #fff;
+background: linear-gradient(-135deg, #03051f, #2e1b36);
+text-align: center;
+padding: 4rem 0;
 
-export const WorkGrid = styled.div`
-    display: grid;
-    margin: 4rem auto;
-    gap: 2rem;
+`
 
-    @media (min-width: 650px) {
-        grid-template-columns: repeat(6, 1fr);
-        gap: 0;
-        grid-template-rows: 1fr 1fr;
-        grid-column-gap: 1.5rem;
-        grid-row-gap: 1.5rem;
 
+export const PortlofioFlex = styled.section`
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 4rem auto 6rem auto;
+`;
+
+export const CardWork = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: ${props => props.theme.clrDark};
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 6px -1px, rgba(255, 255, 255, 0.06) 0px 2px 4px -1px;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    img {   
+        width: 100%;
+        
+        max-width: 500px;
+    }
+
+    p {
+        padding: 1.5rem 1rem;
+        text-align: center;
+        max-width: 500px;
+    }
+
+    @media (min-width: 800px){
+        flex-direction: ${props => props.direction ? props.direction : "row"};
+
+        p {
+            padding: 2rem;
+            flex: 2;
+            text-align: center;
+        }
+    
         img {
-            height: 100%;
-        }
-
-        div {
-            width: 100%;
-            height: 100%;
-        }
-
-        .work1 {
-            grid-column: 1/4;
-            grid-row: 1/2;
-        }
-
-        .work2 {
-            grid-column: 4/7;
-            grid-row: 1/2;
-        }
-
-        .work3 {
-            grid-column: 1/3;
-            grid-row: 2/3;
-        }
-
-        .work4 {
-            grid-column: 3/5;
-            grid-row: 2/3;
-        }
-
-        .work5 {
-            grid-column: 5/7;
-            grid-row: 2/3;
+            width: 50%;
+            flex: 1;
         }
     }
-`;
+
+`

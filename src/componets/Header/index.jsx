@@ -22,7 +22,7 @@ export default function Index(props) {
 
     return (
         <HeaderStyled>
-            <FlexContainer align="center" justify="space-between">
+            <FlexContainer align="center" justify="space-between" padding="1.5rem">
                 <Link to="/">
                     <img src={logo} alt="" />
                 </Link>

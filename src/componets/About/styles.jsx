@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const AboutStyled = styled.section``;
+export const AboutStyled = styled.section`
+    padding: 4rem 0 0 0;
+`;
 
 export const Split = styled.div`
     display: flex;
@@ -9,6 +11,9 @@ export const Split = styled.div`
     justify-content: space-between;
     gap: 5rem;
     margin: 4rem auto;
+    padding: 1rem;
+
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
     p {
         flex: 1;
@@ -17,6 +22,20 @@ export const Split = styled.div`
 
     img {
         display: none;
+    }
+
+    button {
+        background: none;
+        outline: none;
+        border: none;
+        color: ${props => props.theme.clrAccent};
+        font-size: 1.125rem;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
     }
 
     @media (min-width: 900px) {

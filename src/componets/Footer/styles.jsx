@@ -1,12 +1,6 @@
 import styled from "styled-components";
 
 export const FooterStyled = styled.footer`
-    /* background-color: ${props => props.theme.clrDark};
-    color: ${props => props.theme.clrLight};
-    padding: 2rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center; */
     background-color: ${props => props.theme.clrDark};
     color: ${props => props.theme.clrLight};
 

@@ -17,7 +17,7 @@ export default function index() {
             <FlexContainer
                 direction="column"
                 align="center"
-                padding="3rem 1.5rem"
+                padding="4rem 1.5rem"
                 gap="1.5rem"
             >
                 <nav>
@@ -55,7 +55,7 @@ export default function index() {
                     </ul>
                 </nav>
 
-                <FlexContainer align="center" gap="2rem"> 
+                <FlexContainer align="center" gap="2rem" padding="0"> 
                     <img src={logo} alt="" />
                     <p>&copy; Copyright 2021</p>
                 </FlexContainer>

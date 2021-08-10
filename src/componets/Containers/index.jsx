@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FlexContainer = styled.footer`
+export const FlexContainer = styled.section`
     background-color: transparent;
 
     max-width: 1400px;
@@ -12,14 +12,13 @@ export const FlexContainer = styled.footer`
     flex-direction: ${(props) => props.direction};
     text-align: ${(props) => props.textAlign};
     gap: ${(props) => props.gap};
-
-    padding: ${(props) => (props.padding ? props.padding : "1rem 1.5rem")};
+    padding: ${props => props.padding ? props.padding : "3rem"};
     min-height: 8vh;
 `;
 
 export const ContainerSplit = styled.div`
     display: flex;
-    gap: 3rem;
+    gap: 4.5rem;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
