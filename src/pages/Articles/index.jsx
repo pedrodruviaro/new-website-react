@@ -7,12 +7,19 @@ import { Button } from "../../componets/Button";
 export default function Index() {
     const articles = [
         {
+            title: "Onde praticar minhas habilidades de front-end?",
+            author: "Pedro",
+            category: "estudos",
+            date: "12/ago/2021",
+            link: 'https://www.linkedin.com/pulse/onde-praticar-minhas-habilidades-de-front-end-dalmolin-ruviaro/'
+        },
+        {
             title: "Dicas no aprendizado de CSS",
             author: "Pedro",
             category: "css",
             date: "29/jul/2021",
             link: "https://www.linkedin.com/pulse/dicas-aprendizado-de-css-pedro-henrique-dalmolin-ruviaro/?trackingId=XwZb%2F1b3Rk6zi4pQbp6%2BTg%3D%3D",
-        },
+        }
     ];
 
     return (

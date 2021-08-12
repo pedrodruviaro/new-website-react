@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FooterStyled = styled.footer`
     background-color: ${props => props.theme.clrDark};
     color: ${props => props.theme.clrLight};
-    border-top: 2px solid ${props => props.theme.clrAccent};
+    border-top: 3px solid ${props => props.theme.clrAccent};
 
     img {
         width: 120px;

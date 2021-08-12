@@ -5,9 +5,9 @@ export const SidebarStyled = styled.aside`
     background-color: ${(props) => props.theme.clrDark};
     color: ${(props) => props.theme.clrLight};
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     z-index: 100;
 
     transform: ${(props) =>
@@ -40,11 +40,11 @@ export const SidebarStyled = styled.aside`
 `;
 
 export const SidebarItem = styled.li`
-margin: 1.5rem auto;
+margin: 1rem auto;
 
     a {
         font-weight: ${props => props.theme.weigthBold};
-        font-size: 2rem;
+        font-size: 1.25rem;
         text-decoration: none;
         text-transform: lowercase;
     

@@ -10,7 +10,7 @@ export const HeroStyled = styled.div`
     background-blend-mode: multiply;
     background-position: center;
     background-size: contain cover;
-    background-repeat: repeat;
+    background-repeat:repeat repeat;
     color: #fff;
     display: flex;
     justify-content: center;

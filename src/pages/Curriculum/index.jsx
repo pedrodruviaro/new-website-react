@@ -12,8 +12,8 @@ export default function index() {
                 <SideBarCurriculum>
                     <img src={profilePhoto} alt="Pedro Profile"/>
                     <h4 className="nome">PEDRO HENRIQUE DALMOLIN RUVIARO</h4>
-                    <p class="titulo">Desenvolvedor Web</p>
-                    <div class="perfil-pessoal">
+                    <p className="titulo">Desenvolvedor Web</p>
+                    <div className="perfil-pessoal">
                         <QuaternayTitle>Perfil Pessoal</QuaternayTitle>
                         <Paragraph>
                             Extremamente motivado, em constante desenvolvimento
@@ -22,7 +22,7 @@ export default function index() {
                             implementar novas funcionalidades à meus projetos.
                         </Paragraph>
                     </div>
-                    <div class="habilidades">
+                    <div className="habilidades">
                         <QuaternayTitle>Habilidades e competencias</QuaternayTitle>
                         <ul>
                             <li>- Programação de aplicações web em React JS</li>
@@ -39,7 +39,7 @@ export default function index() {
                         </ul>
                     </div>
 
-                    <div class="contato">
+                    <div className="contato">
                         <QuaternayTitle>CONTATO</QuaternayTitle>
                         <p>55 9995527755</p>
                         <p>pedrodruviaro@gmail.com</p>
@@ -48,7 +48,7 @@ export default function index() {
                 </SideBarCurriculum>
 
                 <CentralCurriculum>
-                    <div class="historico">
+                    <div className="historico">
                         <h2>HISTORICO PROFISSIONAL</h2>
                         <h3>Lorem, ipsum.</h3>
                         <Paragraph>
@@ -60,7 +60,7 @@ export default function index() {
                         </Paragraph>
                     </div>
 
-                    <div class="educacional">
+                    <div className="educacional">
                         <h2>HISTORICO EDUCACIONAL</h2>
                         <Paragraph>
                             Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -71,7 +71,7 @@ export default function index() {
                         </Paragraph>
                     </div>
 
-                    <div class="interesses">
+                    <div className="interesses">
                         <h2>INTERESSES E HOBBIES</h2>
                         <Paragraph>
                             Leitor assíduo, gosto de estudar e entender sobre

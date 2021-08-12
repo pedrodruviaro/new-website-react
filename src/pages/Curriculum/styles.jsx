@@ -21,7 +21,7 @@ export const SideBarCurriculum = styled.section`
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    background: linear-gradient(135deg, #43284e, #090d3d);
+    background: linear-gradient(135deg, #43284e, #050722);
     
 
     img {
@@ -87,9 +87,8 @@ export const SideBarCurriculum = styled.section`
 `;
 
 export const CentralCurriculum = styled.section`
-    padding: 2rem 4rem;
-    padding-left: 6rem;
 
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -114,5 +113,7 @@ export const CentralCurriculum = styled.section`
         position: relative;
         left: -3rem;
         width: calc(100% + 3rem);
+        padding: 2rem 4rem;
+        padding-left: 6rem;
     }
 `;
