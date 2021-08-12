@@ -9,6 +9,7 @@ import Sidebar from "./componets/Sidebar";
 import Main from "./componets/Main";
 import FormContact from "./pages/FormContact";
 import Curriculum from './pages/Curriculum'
+import Articles from './pages/Articles'
 import ConfirmSubmit from './pages/ConfirmSubmit'
 import Page404 from './pages/Page404'
 import Footer from "./componets/Footer";
@@ -39,13 +40,16 @@ function App() {
                     <Route exact path="/">
                         <Main />
                     </Route>
-                    <Route path="/contact">
-                        <FormContact />
-                    </Route>
                     <Route path="/curriculum">
                         <Curriculum />
                     </Route>
+                    <Route path="/articles">
+                        <Articles />
+                    </Route>
 
+                    <Route path="/contact">
+                        <FormContact />
+                    </Route>
                     <Route path="/confirm-submit">
                         <ConfirmSubmit />
                     </Route>

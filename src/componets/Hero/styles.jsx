@@ -5,7 +5,7 @@ import pattern from '../../assets/imgs/pattern.svg'
 export const HeroStyled = styled.div`
 
     height: calc(100vh - 8vh);
-    background-image: url(${pattern}), radial-gradient(#494949, #5e317099);
+    background-image: url(${pattern}), radial-gradient(#49494984, #5e317099);
     background-attachment: fixed;
     background-blend-mode: multiply;
     background-position: center;
@@ -18,7 +18,7 @@ export const HeroStyled = styled.div`
     flex-direction: column;
 	text-align: center;
 	gap: 1.5rem;
-    padding: 1rem;
+    padding: 1.5rem;
 `;
 
 export const HeroTitle = styled.h1`

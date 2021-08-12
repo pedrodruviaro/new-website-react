@@ -3,9 +3,10 @@ import styled from "styled-components";
 
 export const WorkStyled = styled.section`
 color: #fff;
-background: linear-gradient(-135deg, #03051f, #2e1b36);
+/* background: linear-gradient(-135deg, #03051f, #2e1b36); */
+background: linear-gradient(135deg, #2e1b36, #03051f);
 text-align: center;
-padding: 4rem 0;
+padding: 3rem 0;
 
 `
 
@@ -14,7 +15,7 @@ export const PortlofioFlex = styled.section`
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    margin: 4rem auto 6rem auto;
+    margin: 6rem auto;
 `;
 
 export const CardWork = styled.div`

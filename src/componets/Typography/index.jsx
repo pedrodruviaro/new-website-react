@@ -16,7 +16,7 @@ export const PrimaryTitle = styled.h1`
 export const SecondaryTitle = styled.h2`
     font-size: 3rem;
     line-height: 1.1;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     font-family: ${(props) => props.fontPrimary};
     text-align: center;
     font-weight: 600;
@@ -27,10 +27,11 @@ export const SecondaryTitle = styled.h2`
 `;
 
 export const TertiaryTitle = styled.h3`
-    font-size: 1.25rem;
+    font-size: 2rem;
     text-align: center;
     line-height: 1.1;
     margin-bottom: 1.5rem;
+    font-weight: 500;
     font-family: ${(props) => props.fontPrimary};
 
     &::after {
@@ -43,14 +44,13 @@ export const TertiaryTitle = styled.h3`
     }
 
     @media (min-width: 800px) {
-        font-size: 1.5rem;
+        font-size: 2.25rem;
     }
 `;
 
 export const Paragraph = styled.p`
     line-height: 1.5;
     text-align: ${props => props.align};
-
     flex: 1;
 `;
 

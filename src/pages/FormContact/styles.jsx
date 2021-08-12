@@ -35,6 +35,6 @@ export const FormStyled = styled.form`
 
 export const PendingMessage = styled.p`
     font-weight: 600;
-    font-size: 1.125rem;
-    margin: .25rem;
+    font-size: 1.5rem;
+    margin: .5rem;
 `

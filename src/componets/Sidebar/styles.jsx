@@ -40,11 +40,13 @@ export const SidebarStyled = styled.aside`
 `;
 
 export const SidebarItem = styled.li`
+margin: 1.5rem auto;
 
     a {
         font-weight: ${props => props.theme.weigthBold};
-        font-size: ${props => props.theme.fsh3};
+        font-size: 2rem;
         text-decoration: none;
+        text-transform: lowercase;
     
         &:hover {
             color: var(--clr-accent);

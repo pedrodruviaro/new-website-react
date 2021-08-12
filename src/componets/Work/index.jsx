@@ -75,7 +75,7 @@ export default function index() {
                     target="_blank"
                     rel="noreferrer"
                     href="https://github.com/pedrodruviaro"
-                    margin="2rem auto 0 auto"
+                    margin="3rem auto 0 auto"
                 >
                     Check it out!
                 </Button>

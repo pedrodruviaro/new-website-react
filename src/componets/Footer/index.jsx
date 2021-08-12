@@ -4,7 +4,6 @@ import { FooterStyled } from "./styles";
 import {
     FaGithub,
     FaLinkedinIn,
-    FaInstagram,
     FaEnvelopeOpenText,
     FaRegListAlt
 } from "react-icons/fa";
@@ -17,8 +16,8 @@ export default function index() {
             <FlexContainer
                 direction="column"
                 align="center"
-                padding="4rem 1.5rem"
-                gap="1.5rem"
+                padding="4rem 1.5rem 3rem 1.5rem"
+                gap="2rem"
             >
                 <nav>
                     <ul>
@@ -32,12 +31,6 @@ export default function index() {
                             <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/pedro-henrique-dalmolin-ruviaro-4b4a00209/">
                                 <FaLinkedinIn />
                                 Linkedin
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/pedrodalmolin/">
-                                <FaInstagram />
-                                Instagram
                             </a>
                         </li>
                         <li>
@@ -55,7 +48,7 @@ export default function index() {
                     </ul>
                 </nav>
 
-                <FlexContainer align="center" gap="2rem" padding="0"> 
+                <FlexContainer align="center" gap="2rem" padding="0rem"> 
                     <img src={logo} alt="" />
                     <p>&copy; Copyright 2021</p>
                 </FlexContainer>

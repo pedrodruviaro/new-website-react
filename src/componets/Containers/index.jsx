@@ -14,6 +14,12 @@ export const FlexContainer = styled.section`
     gap: ${(props) => props.gap};
     padding: ${props => props.padding ? props.padding : "3rem"};
     min-height: 8vh;
+
+    @media (min-width: 800px) {
+        font-size: 1.125rem;
+        padding: ${props => props.padding ? props.padding : "4rem"};
+
+    }
 `;
 
 export const ContainerSplit = styled.div`
@@ -24,6 +30,10 @@ export const ContainerSplit = styled.div`
     flex-direction: column;
     margin: 3rem auto;
     max-width: 1280px;
+
+    div {
+        flex: 1;
+    }
 
     @media (min-width: 900px) {
         flex-direction: row;

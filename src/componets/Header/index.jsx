@@ -15,6 +15,10 @@ export default function Index(props) {
             path: "/curriculum",
         },
         {
+            label: "Articles",
+            path: "/articles"
+        },
+        {
             label: "Contact",
             path: "/contact",
         }
