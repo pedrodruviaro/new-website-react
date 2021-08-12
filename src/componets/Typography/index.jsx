@@ -48,6 +48,21 @@ export const TertiaryTitle = styled.h3`
     }
 `;
 
+export const QuaternayTitle = styled.h4`
+    font-size: 1.75rem;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: ${(props) => props.fontPrimary};
+
+    @media (min-width: 800px) {
+        font-size: 1.5rem;
+    }
+`;
+
 export const Paragraph = styled.p`
     line-height: 1.5;
     text-align: ${props => props.align};

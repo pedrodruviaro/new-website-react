@@ -1,0 +1,151 @@
+:root {
+    --escuro: #3a3e4d;
+    --medio: #fefefe;
+    --claro: rgb(219, 230, 255);
+}
+
+img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.documento {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+
+@media (min-width: 900px){
+    .documento {
+        flex-direction: row;
+    }
+
+    .lateral {
+        flex: 1;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        position: relative;
+        z-index: 999;
+    }
+
+    .central {
+        flex: 2;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        position: relative;
+        left: -3rem;
+        width: calc(100% + 3rem);
+
+    }
+}
+
+/* lateral */
+.lateral {
+    background-color: var(--escuro);
+    color: var(--medio);
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.nome {
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: var(--claro);
+}
+
+.titulo {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .9rem;
+    text-align: center;
+}
+
+.titulo::after {
+    content: "";
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+    margin-top: .5rem;
+    height: 3px;
+    background-color: var(--medio);
+}
+
+.perfil-pessoal h2 {
+    color: var(--medio);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.perfil-pessoal p {
+    line-height: 1.5;
+}
+
+.habilidades h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    color: var(--medio);
+}
+
+.habilidades li {
+    list-style: none;
+    margin: .5rem 0;
+}
+
+.contato h2 {
+    color: var(--medio);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.contato p {
+    margin: .5rem 0;
+}
+
+
+
+/* central */
+
+.central {
+    padding: 2rem 4rem;
+    padding-left: 6rem;
+    background-color: var(--medio);
+    color: var(--escuro);
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.central h2 {
+    color: var(--escuro);
+    font-size: 1.5rem;
+    background-color: var(--claro);
+    padding: .5rem 1rem;
+    width: max-content;
+    margin-bottom: 1rem;
+}
+
+.central h3 {
+    font-weight: 600;   
+    font-size: 1.125rem;
+    color: var(--escuro);
+    margin-bottom: .5rem;
+}
+
