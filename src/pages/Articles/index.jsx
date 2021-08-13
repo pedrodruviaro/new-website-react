@@ -1,26 +1,49 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FlexContainer } from "../../componets/Containers";
-import { Paragraph, TertiaryTitle } from "../../componets/Typography";
+import { Paragraph, QuaternayTitle, TertiaryTitle } from "../../componets/Typography";
 import { Article, List } from "./styles";
 import { Button } from "../../componets/Button";
+import firebase from '../../firebase'
 
 export default function Index() {
-    const articles = [
-        {
-            title: "Onde praticar minhas habilidades de front-end?",
-            author: "Pedro",
-            category: "estudos",
-            date: "12/ago/2021",
-            link: 'https://www.linkedin.com/pulse/onde-praticar-minhas-habilidades-de-front-end-dalmolin-ruviaro/'
-        },
-        {
-            title: "Dicas no aprendizado de CSS",
-            author: "Pedro",
-            category: "css",
-            date: "29/jul/2021",
-            link: "https://www.linkedin.com/pulse/dicas-aprendizado-de-css-pedro-henrique-dalmolin-ruviaro/?trackingId=XwZb%2F1b3Rk6zi4pQbp6%2BTg%3D%3D",
-        }
-    ];
+    const [articles, setArticles] = useState([])
+    const [loading, setLoading] = useState(false)
+
+    const ref = firebase.firestore().collection("artigos")
+
+    function getArticles(){
+        setLoading(true)
+
+        ref.onSnapshot(querySnapshot => {
+            const items = []
+            querySnapshot.forEach(doc => {
+                items.push(doc.data())
+            })
+
+            setArticles(items)
+            setLoading(true)
+        })
+    }
+
+    useEffect(() => {
+        console.log('usei effect');
+        getArticles()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+
+    if(loading) {
+        return (<FlexContainer
+        align="center"
+        justify="center"
+        direction="column"
+        gap="2rem"
+    >
+        
+        <TertiaryTitle>Articles</TertiaryTitle>
+        <QuaternayTitle>Loading...</QuaternayTitle>
+    </FlexContainer>
+        )
+    }
 
     return (
         <FlexContainer

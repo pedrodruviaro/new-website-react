@@ -13,44 +13,52 @@ export default function index() {
                     <img src={profilePhoto} alt="Pedro Profile"/>
                     <h4 className="nome">PEDRO HENRIQUE DALMOLIN RUVIARO</h4>
                     <p className="titulo">Desenvolvedor Web</p>
-                    <div className="perfil-pessoal">
+                    <div>
                         <QuaternayTitle>Perfil Pessoal</QuaternayTitle>
                         <Paragraph>
                             Extremamente motivado, em constante desenvolvimento
-                            de minhas habilidades e crescimento profissional.
-                            Confio em minha capacidade de resolver problemas e
+                            de minhas habilidades e focado em meu crescimento profissional.
+                            Confio na minha capacidade de resolver problemas e
                             implementar novas funcionalidades à meus projetos.
                         </Paragraph>
                     </div>
-                    <div className="habilidades">
-                        <QuaternayTitle>Habilidades e competencias</QuaternayTitle>
+                    <div>
+                        <QuaternayTitle>Soft Skills</QuaternayTitle>
                         <ul>
-                            <li>- Programação de aplicações web em React JS</li>
-                            <li>- Desevolvimento em HTML e CSS</li>
+                            <li>Proativo e determinado</li>
+                            <li>Organizado e ótimo com prazos</li>
+                            <li>Trabalho bem em equipe</li>
+                            <li>Autodidata e esforçado</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <QuaternayTitle>Hard Skills</QuaternayTitle>
+                        <ul>
+                            <li>Aplicações web com React JS</li>
                             <li>
-                                - Conhecimentos de bibliotecas como Material UI
+                                Conhecimentos de bibliotecas como Material UI
                                 e Styled-Components
                             </li>
-                            <li>- Git e GitHub</li>
-                            <li>- Conhecimento de métodos ágeis</li>
-                            <li>- Motivado e desciplinado</li>
-                            <li>- Possuo fluência em ingles</li>
-                            <li>- Trabalho bem em equipe</li>
+                            <li>Conhecimento de Firebase</li>
+                            <li>Desevolvimento em HTML e CSS</li>
+                            <li>Git e GitHub</li>
+                            <li>Conhecimento de métodos ágeis</li>
+                            <li>Inglês intermediários à avançado</li>
                         </ul>
                     </div>
 
                     <div className="contato">
                         <QuaternayTitle>CONTATO</QuaternayTitle>
-                        <p>55 9995527755</p>
-                        <p>pedrodruviaro@gmail.com</p>
-                        <p>Rio Grande Do Sul, Brasil</p>
+                        <Paragraph>55 9995527755</Paragraph>
+                        <Paragraph>pedrodruviaro@gmail.com</Paragraph>
+                        <Paragraph>Rio Grande Do Sul, Brasil</Paragraph>
                     </div>
                 </SideBarCurriculum>
 
                 <CentralCurriculum>
                     <div className="historico">
-                        <h2>HISTORICO PROFISSIONAL</h2>
-                        <h3>Lorem, ipsum.</h3>
+                        <h4>HISTORICO PROFISSIONAL</h4>
+                        <h5>Lorem, ipsum.</h5>
                         <Paragraph>
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Excepturi quidem sint debitis minus
@@ -61,7 +69,7 @@ export default function index() {
                     </div>
 
                     <div className="educacional">
-                        <h2>HISTORICO EDUCACIONAL</h2>
+                        <h4>HISTORICO EDUCACIONAL</h4>
                         <Paragraph>
                             Lorem ipsum dolor sit, amet consectetur adipisicing
                             elit. Tempore perspiciatis dolorem, dignissimos,
@@ -72,13 +80,13 @@ export default function index() {
                     </div>
 
                     <div className="interesses">
-                        <h2>INTERESSES E HOBBIES</h2>
+                        <h4>INTERESSES E HOBBIES</h4>
                         <Paragraph>
                             Leitor assíduo, gosto de estudar e entender sobre
                             tudo o que se passa à minha volta. Desde meu
                             ingresso ao campo da tecnologia, programar e
                             aprender tudo relacionado à esse universo tem sido
-                            minha principal fonte de interesse e pesquisa.
+                            minha principal fonte de interesse e pesquisa. Escrevo sobre minha jornada e dou dicas para quem, assim como eu, é autoditada na área.
                         </Paragraph>
                     </div>
                 </CentralCurriculum>

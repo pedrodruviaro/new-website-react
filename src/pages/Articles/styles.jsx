@@ -65,6 +65,7 @@ export const Article = styled.article`
         gap: .25rem;
         align-self: center;
         font-weight: 600;
+        width: max-content;
 
         &::before {
             content: "";

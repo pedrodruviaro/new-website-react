@@ -18,7 +18,6 @@ export const FlexContainer = styled.section`
     @media (min-width: 800px) {
         font-size: 1.125rem;
         padding: ${props => props.padding ? props.padding : "4rem"};
-
     }
 `;
 

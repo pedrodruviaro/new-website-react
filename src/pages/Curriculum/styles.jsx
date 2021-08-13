@@ -6,9 +6,13 @@ export const Curriculum = styled.div`
     margin: 4rem auto;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px,
-                rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px,
+        rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
+    p {
+        font-size: 1.125rem;
+    }
     @media (min-width: 900px) {
         flex-direction: row;
     }
@@ -20,9 +24,8 @@ export const SideBarCurriculum = styled.section`
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-    background: linear-gradient(135deg, #43284e, #050722);
-    
+    gap: 4rem;
+    background: linear-gradient(135deg, #43284e, #090c36);
 
     img {
         width: 175px;
@@ -40,7 +43,7 @@ export const SideBarCurriculum = styled.section`
     .titulo {
         text-transform: uppercase;
         letter-spacing: 2px;
-        font-size: 0.9rem;
+        font-size: 1rem;
         text-align: center;
     }
 
@@ -51,30 +54,21 @@ export const SideBarCurriculum = styled.section`
         margin: 0 auto;
         margin-top: 0.5rem;
         height: 3px;
+        background-color: #fff;
     }
 
-    .perfil-pessoal h2 {
-        text-transform: uppercase;
-        margin-bottom: 1rem;
-        font-size: 1.25rem;
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 
-    .habilidades h2 {
-        font-size: 1rem;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        margin-bottom: 1rem;
+    li {
+        line-height: 1.5;
     }
 
-    .habilidades li {
-        list-style: none;
-        margin: 0.5rem 0;
-    }
-
-    .contato h2 {
-        text-transform: uppercase;
-        margin-bottom: 1rem;
-        font-size: 1.25rem;
+    li::before {
+        content: "- ";
     }
 
     @media (min-width: 900px) {
@@ -87,23 +81,18 @@ export const SideBarCurriculum = styled.section`
 `;
 
 export const CentralCurriculum = styled.section`
-
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 4rem;
 
-    h2 {
+    h4 {
         font-size: 1.5rem;
         padding: 0.5rem 1rem;
+        font-weight: 700;
         width: max-content;
-        margin-bottom: 1rem;
-    }
-
-    h3 {
-        font-weight: 600;
-        font-size: 1.125rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1.25rem;
+        background-color: #eee2fd;
     }
 
     @media (min-width: 900px) {
