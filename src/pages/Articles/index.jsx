@@ -3,7 +3,7 @@ import { FlexContainer } from "../../componets/Containers";
 import { Paragraph, QuaternayTitle, TertiaryTitle } from "../../componets/Typography";
 import { Article, List } from "./styles";
 import { Button } from "../../componets/Button";
-import firebase from '../../firebase'
+import firebase from '../../services/firebase'
 
 export default function Index() {
     const [articles, setArticles] = useState([])
@@ -21,7 +21,7 @@ export default function Index() {
             })
 
             setArticles(items)
-            setLoading(true)
+            setLoading(false)
         })
     }
 
