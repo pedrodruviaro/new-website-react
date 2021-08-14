@@ -17,7 +17,7 @@ export default function Index() {
                 <SecondaryTitle>Who I am</SecondaryTitle>
                 <CustomTitle>web developer based in Brazil</CustomTitle>
 
-                <Split direction="row">
+                <Split direction="row" tabIndex="0">
                     <Paragraph align="justify">
                         Chemistry graduated, currently focusing on my career
                         transition to the tech area, especially in web
@@ -30,7 +30,7 @@ export default function Index() {
                     </Paragraph>
                     <img src={chart} alt="" />
                 </Split>
-                <Split direction="row-reverse">
+                <Split direction="row-reverse" tabIndex="0">
                     <Paragraph align="justify">
                         In early 2021, i started my way up in the programming
                         world, always studying hard and practicing along the

@@ -4,7 +4,9 @@ import styled from "styled-components";
 export const WorkStyled = styled.section`
 color: #fff;
 /* background: linear-gradient(-135deg, #03051f, #2e1b36); */
-background: linear-gradient(135deg, #2e1b36, #03051f);
+/* background: linear-gradient(135deg, #2e1b36, #03051f); */
+
+background: linear-gradient(to bottom, #03051f, #2e1b36);
 text-align: center;
 padding: 3rem 0;
 
@@ -26,7 +28,6 @@ export const CardWork = styled.div`
     color: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 6px -1px, rgba(255, 255, 255, 0.06) 0px 2px 4px -1px;
     max-width: 1000px;
     margin: 0 auto;
 

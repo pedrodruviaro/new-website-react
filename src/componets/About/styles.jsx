@@ -12,6 +12,7 @@ export const Split = styled.div`
     gap: 5rem;
     margin: 4rem auto;
     padding: 1rem;
+    border-radius: 5px;
 
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
@@ -22,6 +23,11 @@ export const Split = styled.div`
 
     img {
         display: none;
+        transition: transform 200ms ease;
+    }
+
+    &:focus img {
+        transform: scale(1.1);
     }
 
     button {

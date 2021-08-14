@@ -26,7 +26,6 @@ export default function Index() {
     }
 
     useEffect(() => {
-        console.log('usei effect');
         getArticles()
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
@@ -74,11 +73,7 @@ export default function Index() {
                                 <span className="date">{article.date}</span>
                             </div>
                             <Paragraph>
-                                Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Corporis, perspiciatis veniam
-                                ut neque tenetur eaque inventore a, hic quasi,
-                                rem iusto. Cumque libero fugit placeat enim
-                                aperiam similique saepe amet.
+                                {article.description}
                             </Paragraph>
                             <Button
                                 target="_blank"
