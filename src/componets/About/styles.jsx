@@ -46,6 +46,7 @@ export const Split = styled.div`
 
     @media (min-width: 900px) {
         flex-direction: ${(props) => props.direction};
+        padding: 2rem;
 
         img {
             flex: 1;
