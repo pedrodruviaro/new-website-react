@@ -1,13 +1,14 @@
 import React from "react";
-import {Container} from '../../componets/Containers'
-import {Paragraph, QuaternayTitle, TertiaryTitle} from '../../componets/Typography'
+import {Paragraph, QuaternayTitle} from '../../componets/Typography'
 import { CentralCurriculum, Curriculum, SideBarCurriculum } from "./styles";
 import profilePhoto from '../../assets/imgs/perfil.jpg'
+
+import { Container } from '../../componets/Containers'
 
 export default function index() {
     return (
         <Container>
-            <TertiaryTitle>Curriculum</TertiaryTitle>
+
             <Curriculum>
                 <SideBarCurriculum>
                     <img src={profilePhoto} alt="Pedro Profile"/>

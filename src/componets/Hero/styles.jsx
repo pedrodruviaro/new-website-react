@@ -10,7 +10,7 @@ background-position: center;
 background-size: contain cover;
 background-repeat:repeat repeat; */
 
-    height: calc(100vh - 88px);
+    height: calc(100vh - 8vh);
     background: linear-gradient(to top, #2e1b36, #03051f);
 
     color: #fff;

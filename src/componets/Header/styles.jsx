@@ -1,19 +1,23 @@
 import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
-    /* background-color: ${props => props.theme.clrDark};
-    color: ${props => props.theme.clrLight};
-    padding: 1rem 1.5rem;
     height: 8vh;
     display: flex;
     align-items: center;
-    justify-content: space-between; */
+    justify-content: space-between;
+    padding: 1.5rem;
 
     background-color: ${props => props.theme.clrDark};
     color: ${props => props.theme.clrLight};
 
     img {
         width: 120px;
+    }
+
+    @media (min-width: 900px){
+        img{
+            width: 150px;
+        }
     }
 `
 
@@ -29,6 +33,7 @@ export const MenuNavHeader = styled.nav`
     a {
         padding: 0 .25rem;
         text-transform: lowercase;
+        font-size: 1.25rem;
 
         &:hover {
             color: ${props => props.theme.clrAccent}

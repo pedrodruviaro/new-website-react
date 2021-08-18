@@ -3,18 +3,19 @@ import styled from "styled-components";
 export const Curriculum = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 4rem auto;
+
     border-radius: 5px;
     overflow: hidden;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
         rgba(60, 64, 67, 0.15) 0px 2px 6px 2px,
         rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
-    p {
-        font-size: 1.125rem;
-    }
     @media (min-width: 900px) {
         flex-direction: row;
+
+        p {
+            font-size: 1.125rem;
+        }
     }
 `;
 
@@ -28,7 +29,7 @@ export const SideBarCurriculum = styled.section`
     background: linear-gradient(135deg, #43284e, #090c36);
 
     img {
-        width: 175px;
+        width: 150px;
         border-radius: 50%;
         margin: 0 auto;
     }
@@ -36,7 +37,7 @@ export const SideBarCurriculum = styled.section`
     .nome {
         letter-spacing: 2px;
         text-align: center;
-        font-size: 1.75rem;
+        font-size: 1.6rem;
         font-weight: 900;
     }
 
@@ -75,7 +76,6 @@ export const SideBarCurriculum = styled.section`
         flex: 1;
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
-        position: relative;
         z-index: 999;
     }
 `;
@@ -90,7 +90,6 @@ export const CentralCurriculum = styled.section`
         font-size: 1.5rem;
         padding: 0.5rem 1rem;
         font-weight: 700;
-        width: max-content;
         margin-bottom: 1.25rem;
         background-color: #eee2fd;
     }
