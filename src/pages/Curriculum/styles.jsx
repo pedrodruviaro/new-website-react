@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
 export const CurriculumWrapper = styled.div`
-    padding: 1.5rem;
+    padding: 1rem;
     max-width: 1400px;
     margin: 4rem auto;
+
+    @media (min-width: 900px){
+        padding: 2rem;
+    }
 `
 
 export const Curriculum = styled.div`
@@ -19,6 +23,13 @@ export const Curriculum = styled.div`
         p {
             font-size: 1.125rem;
         }
+    }
+
+    .alura-link {
+        color: ${props => props.theme.clrAccent};
+        font-weight: 500;
+        margin: 0 .25rem;
+        outline-offset: 1px;
     }
 `;
 
@@ -75,11 +86,32 @@ export const SideBarCurriculum = styled.section`
         content: "- ";
     }
 
+    .split {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .contato {
+            text-align: center;
+        }
+
     @media (min-width: 900px) {
         flex: 1;
-        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
         z-index: 999;
+
+        .split {
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: row-reverse;
+            margin: 4rem auto;
+
+            > div {
+                flex: 1;
+            }
+        }
     }
 `;
 

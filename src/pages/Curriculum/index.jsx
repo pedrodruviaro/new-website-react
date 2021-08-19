@@ -1,5 +1,9 @@
 import React from "react";
-import { Paragraph, QuaternayTitle, TertiaryTitle } from "../../componets/Typography";
+import {
+    Paragraph,
+    QuaternayTitle,
+    TertiaryTitle,
+} from "../../componets/Typography";
 import {
     CentralCurriculum,
     Curriculum,
@@ -11,7 +15,9 @@ import profilePhoto from "../../assets/imgs/perfil.jpg";
 export default function index() {
     return (
         <CurriculumWrapper>
-            <TertiaryTitle style={{marginBottom: '4rem'}}>Curriculum</TertiaryTitle>
+            <TertiaryTitle style={{ marginBottom: "4rem" }}>
+                Curriculum
+            </TertiaryTitle>
             <Curriculum>
                 <SideBarCurriculum>
                     <img src={profilePhoto} alt="Pedro Profile" />
@@ -36,34 +42,36 @@ export default function index() {
                             React JS.
                         </Paragraph>
                     </div>
-                    <div>
-                        <QuaternayTitle>Soft Skills</QuaternayTitle>
-                        <ul>
-                            <li>Proativo e determinado.</li>
-                            <li>Facilidade no apredizado.</li>
-                            <li>Organizado e ótimo com prazos.</li>
-                            <li>Facilidade com trabalho em equipe.</li>
-                            <li>Autodidata e esforçado.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <QuaternayTitle>Hard Skills</QuaternayTitle>
-                        <ul>
-                            <li>Aplicações web com React JS.</li>
-                            <li>
-                                Conhecimentos de bibliotecas como Material UI e
-                                Styled-Components.
-                            </li>
-                            <li>Conhecimento de Firebase.</li>
-                            <li>Desevolvimento em HTML e CSS.</li>
-                            <li>Git e GitHub.</li>
-                            <li>Conhecimento de métodos ágeis.</li>
-                            <li>Inglês intermediários à avançado.</li>
-                        </ul>
+                    <div className="split">
+                        <div>
+                            <QuaternayTitle>Soft Skills</QuaternayTitle>
+                            <ul>
+                                <li>Proativo e determinado.</li>
+                                <li>Facilidade no apredizado.</li>
+                                <li>Organizado e ótimo com prazos.</li>
+                                <li>Facilidade com trabalho em equipe.</li>
+                                <li>Autodidata e esforçado.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <QuaternayTitle>Hard Skills</QuaternayTitle>
+                            <ul>
+                                <li>Aplicações web com React JS.</li>
+                                <li>
+                                    Conhecimentos de bibliotecas como Material
+                                    UI e Styled-Components.
+                                </li>
+                                <li>Conhecimento de Firebase.</li>
+                                <li>Desevolvimento em HTML e CSS.</li>
+                                <li>Git e GitHub.</li>
+                                <li>Conhecimento de métodos ágeis.</li>
+                                <li>Inglês intermediário à avançado.</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div className="contato">
-                        <QuaternayTitle>CONTATO</QuaternayTitle>
+                        <QuaternayTitle style={{textAlign: "center"}}>CONTATO</QuaternayTitle>
                         <Paragraph>55 9 99552-7744</Paragraph>
                         <Paragraph>pedrodruviaro@gmail.com</Paragraph>
                         <Paragraph>Faxinal do Soturno, RS, Brasil</Paragraph>
@@ -71,26 +79,24 @@ export default function index() {
                 </SideBarCurriculum>
 
                 <CentralCurriculum>
-                    <div className="historico">
-                        <h4>HISTORICO PROFISSIONAL</h4>
-                        <h5>Lorem, ipsum.</h5>
-                        <Paragraph>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Excepturi quidem sint debitis minus
-                            reprehenderit voluptatum accusantium enim illo
-                            maxime! Fuga voluptatibus sunt laudantium facere
-                            magnam sint ipsum voluptates officia impedit!
-                        </Paragraph>
-                    </div>
-
                     <div className="educacional">
-                        <h4>HISTORICO EDUCACIONAL</h4>
+                        <h4>EDUCAÇÃO E EXPERIÊNCIA</h4>
                         <Paragraph>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Tempore perspiciatis dolorem, dignissimos,
-                            deleniti voluptate officia in ab fugiat a atque
-                            provident repudiandae expedita ipsum, blanditiis
-                            modi delectus accusamus corrupti. Quam!
+                            - Acredito que minha convivência com a área de
+                            pesquisa e estágio na época de faculdade agregam
+                            valor ao profissional que sou hoje.
+                            <br />- Cursos de formação na Alura Cursos Online.
+                            Confira todos os meus cursos realizados{" "}
+                            <a
+                                className="alura-link"
+                                href="https://cursos.alura.com.br/user/pedrodruviaro/fullCertificate/1427f44179378c995046d7bc78990a4b"
+                                rel="noreferrer"
+                                target="_blank"
+                            >
+                                clicando aqui.
+                            </a>
+                            <br />- Técnologo em Processos Químicos pela
+                            Universidade Federal de Santa Maria.
                         </Paragraph>
                     </div>
 
