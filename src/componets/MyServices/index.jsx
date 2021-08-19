@@ -14,10 +14,10 @@ export default function index(props) {
                         <TertiaryTitle>React</TertiaryTitle>
                         <Paragraph>
                             Currently working with React and Styled-Components
-                            to build web apps and SPA's. At the same time,
+                            to build web apps. At the same time,
                             constantly studying to refine my skills with this
                             awesome framework. Besides, have a good
-                            understanding of libraries, such as Material UI.
+                            understanding of libraries, such as Material UI and Firebase.
                         </Paragraph>
                     </div>
 

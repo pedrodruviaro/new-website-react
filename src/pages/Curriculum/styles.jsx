@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
-export const Curriculum = styled.div`
-    display: flex;
-    flex-direction: column;
+export const CurriculumWrapper = styled.div`
+    padding: 1.5rem;
+    max-width: 1400px;
+    margin: 4rem auto;
+`
 
+export const Curriculum = styled.div`
     border-radius: 5px;
     overflow: hidden;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
