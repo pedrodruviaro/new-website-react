@@ -1,7 +1,8 @@
 import React from "react";
 import { Hamburger, HeaderStyled, MenuNavHeader } from "./styles";
-import logo from "../../assets/imgs/logo.svg";
 import { Link } from "react-router-dom";
+
+import GlitchText from "../GlitchText/index";
 
 export default function Index(props) {
     const links = [
@@ -26,7 +27,7 @@ export default function Index(props) {
     return (
         <HeaderStyled>
             <Link to="/">
-                <img src={logo} alt="" />
+                <GlitchText />
             </Link>
 
             <MenuNavHeader>

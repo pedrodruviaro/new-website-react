@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../../assets/imgs/logo.svg";
 import { FooterStyled } from "./styles";
 import {
     FaGithub,
@@ -49,7 +48,6 @@ export default function index() {
                 </nav>
 
                 <FlexContainer align="center" gap="2rem" padding="0rem"> 
-                    <img src={logo} alt="" />
                     <p>&copy; Copyright 2021</p>
                 </FlexContainer>
             </FlexContainer>
